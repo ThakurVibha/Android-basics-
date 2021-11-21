@@ -3,8 +3,12 @@
     <color name="primary_color">#FCFDFD</color>
     <color name="purple_500">#FCFCFD</color>
     <color name="purple_700">#FEFDFF</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
+    <color name="teal_200">#1946E3</color>
+    <color name="teal_700">#1946E3</color>
+    <color name="main">#FF000000</color>
+    <color name="black">#fff</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="navy_blue">#1946E3</color>
+    <color name="furniture_primary_color">#546CEF</color>
+    <color name="ratingbar_color">#FFC107</color>
 </resources>

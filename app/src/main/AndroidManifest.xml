@@ -10,8 +10,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Crypton">
         <activity
-            android:name=".DemoActivity"
+            android:name=".designs.furnitureapp.activities.NavigationActivity"
+            android:exported="true"
+            android:label="@string/title_activity_navigation" />
+
+        <activity
+            android:name=".designs.furnitureapp.activities.NewArrivalActivity"
+            android:exported="true" />
+        <activity
+            android:name=".designs.fleettravelapp.activities.OptionsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".designs.fleettravelapp.activities.SearchActivity"
+            android:exported="true" />
+        <activity
+            android:name=".recyclerview.DemoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".designs.fleettravelapp.activities.DashBoardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".designs.furnitureapp.fragments.ProductDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".designs.furnitureapp.activities.OnBoardingActivity"
             android:exported="true">
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

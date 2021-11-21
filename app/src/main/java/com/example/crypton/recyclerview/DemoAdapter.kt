@@ -1,24 +1,24 @@
-package com.example.crypton
+package com.example.crypton.recyclerview
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.crypton.R
 
 class DemoAdapter(val songs: List<DemoAdapterModel>) : RecyclerView.Adapter<ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
-        //layout inflator class inflate convert xml component into java object
         val view = LayoutInflater.from(parent.context).inflate(
             R.layout.item_layout, parent,
             false
         )
+
         return ViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        //binding data using holder and position
         holder.title.text = songs[position].title
         holder.desc.text = songs[position].desc
     }

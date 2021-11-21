@@ -1,4 +1,4 @@
-package com.example.crypton
+package com.example.crypton.recyclerview
 
 class DemoAdapterModel{
     var title:String=""
