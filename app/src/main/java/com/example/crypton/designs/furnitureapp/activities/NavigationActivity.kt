@@ -21,7 +21,15 @@ class NavigationActivity : AppCompatActivity() {
             .commit()
     }
 
+
+
+    //sending data from activity to fragment
+
+
+
     private fun selectFragment() {
+
+
         var nav_view = findViewById<BottomNavigationView>(R.id.nav_view)
         nav_view.setOnNavigationItemSelectedListener {
             when (it.itemId) {

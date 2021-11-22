@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import com.example.crypton.R
+import com.example.crypton.designs.furnitureapp.fragments.NewArrivalFragment
 
 class OnBoardingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,8 +15,10 @@ class OnBoardingActivity : AppCompatActivity() {
     }
 
     private fun onClick() {
+
         var btnStart = findViewById<TextView>(R.id.btnStart)
         btnStart.setOnClickListener {
+
             var dashboardIntent = Intent(this, NavigationActivity::class.java)
             startActivity(dashboardIntent)
         }

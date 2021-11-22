@@ -9,6 +9,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.crypton.R
 import com.example.crypton.designs.fleettravelapp.adapters.DashboardAdapter
 import com.example.crypton.designs.fleettravelapp.models.FleetModel
+import com.example.crypton.designs.furnitureapp.fragments.NewArrivalFragment
+
+
+//Brushing my basics of designing in android studio
 
 class DashBoardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,6 +20,7 @@ class DashBoardActivity : AppCompatActivity() {
         setContentView(R.layout.activity_design)
         setAdapter()
         onClick()
+
     }
 
     private fun onClick() {
