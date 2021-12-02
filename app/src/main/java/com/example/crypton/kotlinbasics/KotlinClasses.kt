@@ -1,0 +1,56 @@
+package com.example.crypton.kotlinbasics
+
+//Kotlin classes tutorial shows how to work with classes in Kotlin language.
+// A class is a blueprint for an object in Kotlin.
+//There are three widely used programming paradigms: procedural programming, functional programming, and object-oriented programming. Kotlin supports all of them.
+// In object-oriented programming, we solve complex problems using objects.
+//Object-oriented programming (OOP) is a programming paradigm that uses objects and
+// their interactions to design applications and computer programs.
+
+
+//Simple class
+class Simple {
+
+    private val name = "Simple"
+    fun info() = "This is $name class"
+}
+
+//Empty class
+//An empty class has no members or member functions. The curly brackets can be omitted.
+
+class Being {
+
+}
+
+class Empty
+
+//Kotlin primary constructor
+//A Kotlin class can have a primary constructor and one or more secondary constructors. The primary constructor is part of the class header:
+// it goes after the class name (and optional type parameters)
+class User(name: String, email: String) {
+
+    private val name = name
+    private val email = email
+
+    override fun toString(): String {
+
+        return "User $name has email $email"
+    }
+}
+
+fun main() {
+
+    val s = Simple()
+    println(s)
+    println(s.info())
+
+    var being = Being()
+    println(being)
+
+    var empty = Empty()
+    println(empty)
+
+    val u=User("Vibha Thakur", "vibha@gmail.com")
+    println(u)
+}
+
