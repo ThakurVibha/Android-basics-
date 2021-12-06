@@ -1,5 +1,7 @@
 package com.example.crypton.kotlinbasics
 
+import java.util.*
+
 //Kotlin classes tutorial shows how to work with classes in Kotlin language.
 // A class is a blueprint for an object in Kotlin.
 //There are three widely used programming paradigms: procedural programming, functional programming, and object-oriented programming. Kotlin supports all of them.
@@ -36,21 +38,43 @@ class User(name: String, email: String) {
 
         return "User $name has email $email"
     }
-}
 
+}
+//Maximum element in array
+class MaxArray(){
+    var a= arrayOf(22, 33, 44,11, 60, 55)
+
+    var max=a[0]
+    fun maxNumberInArray(){
+        for (i in a){
+            if(max<i){
+                max=i
+                var sortedArray=a.sortDescending()
+                println(sortedArray)
+
+
+            }
+        }
+        println(max-2)
+
+    }
+}
 fun main() {
 
-    val s = Simple()
-    println(s)
-    println(s.info())
+//    val s = Simple()
+//    println(s)
+//    println(s.info())
+//
+//    var being = Being()
+//    println(being)
+//
+//    var empty = Empty()
+//    println(empty)
+//
+//    val u=User("Vibha Thakur", "vibha@gmail.com")
+//    println(u)
 
-    var being = Being()
-    println(being)
-
-    var empty = Empty()
-    println(empty)
-
-    val u=User("Vibha Thakur", "vibha@gmail.com")
-    println(u)
+    var max=MaxArray()
+    max.maxNumberInArray()
 }
 

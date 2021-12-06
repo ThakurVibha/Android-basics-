@@ -2,29 +2,65 @@ package com.example.crypton.fragmentsbasics
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import com.example.crypton.R
+import com.example.crypton.fragmentsbasics.callback.ToolbarInterface
 import kotlinx.android.synthetic.main.activity_demo.*
 
+class DemoActivity : AppCompatActivity(), ToolbarInterface {
 
-//Demo to pass data between activities and fragments
-//Basic communication between activities and fragments
-
-class DemoActivity : AppCompatActivity(), DemoFragment.Commnunicator {
-    var fragment_tag="fragment_tag"
-
+    //Fragment to activity communication
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_demo)
-        var demoFragment=DemoFragment()
-        var demoFragment2=DemoFragment2()
-        supportFragmentManager.beginTransaction().add(R.id.flContainer, demoFragment).commit()
-        supportFragmentManager.beginTransaction().add(R.id.flContainer2, demoFragment2, fragment_tag).commit()
+        init()
 
     }
-    override fun onSendData(demoModel: DemoModel) {
-        var fragment2=DemoFragment2()
-        fragment2.displayOutput(demoModel)
 
+
+    private fun init() {
+        var selectorFragment = SelectorFragment()
+        doFragmentTransaction(selectorFragment, "SelectorFragment", false, "")
+    }
+
+    private fun doFragmentTransaction(
+        fragment: Fragment,
+        tag: String,
+        addToBackStack: Boolean,
+        message: String
+    ) {
+        if (!message.equals("")) {
+            var bundle = Bundle()
+            bundle.putString("incomingMessage", message)
+            fragment.arguments = bundle
+        }
+        var transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.flContainer, fragment, tag)
+        if (addToBackStack) {
+            transaction.addToBackStack(tag)
+
+        }
+        transaction.commit()
 
     }
+
+    override fun setToolbar(fragmentTag: String) {
+        tvToolbar.text = fragmentTag
+    }
+
+    override fun inflateFragments(fragmentTag: String, message: String) {
+        if (fragmentTag.equals("fragmentA")) {
+            var fragmentA = FragmentA()
+
+            doFragmentTransaction(fragmentA, fragmentTag, true, message)
+        } else if (fragmentTag.equals("fragmentB")) {
+            var fragmentB=FragmentB()
+            doFragmentTransaction(fragmentB, fragmentTag, true, message)
+
+
+        } else if (fragmentTag.equals("fragmentC")) {
+
+        }
+    }
+
 }
