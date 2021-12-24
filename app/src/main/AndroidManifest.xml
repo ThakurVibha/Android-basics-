@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.crypton">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -14,7 +16,6 @@
             android:name=".designs.furnitureapp.activities.NavigationActivity"
             android:exported="true"
             android:label="@string/title_activity_navigation" />
-
         <activity
             android:name=".designs.fleettravelapp.activities.OptionsActivity"
             android:exported="true" />
@@ -22,17 +23,13 @@
             android:name=".designs.fleettravelapp.activities.SearchActivity"
             android:exported="true" />
         <activity
-            android:name=".recyclerview.DemoActivity"
-            android:exported="true" />
-
-        <activity
             android:name=".designs.furnitureapp.activities.OnBoardingActivity"
             android:exported="true" />
         <activity
             android:name=".designs.fleettravelapp.activities.DashBoardActivity"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
-            android:name=".fragmentsbasics.DemoActivity"
+            android:name=".kotlinbasics.retrofitbasics.CreateAccountActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
