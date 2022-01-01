@@ -25,38 +25,34 @@ class GithubActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_github)
 //        fetchRepos()
-        uploadFile()
     }
 
-    private fun uploadFile() {
-
-        // https://github.com/iPaulPro/aFileChooser/blob/master/aFileChooser/src/com/ipaulpro/afilechooser/utils/FileUtils.java
-        // use the FileUtils to get the actual file by uri
-        val file: File = FileUtils.getFile(this, fileUri)
-
-        // create RequestBody instance from file
-
-        // create RequestBody instance from file
-        val requestFile: RequestBody = RequestBody.create(
-            MediaType.parse(contentResolver.getType(fileUri)),
-            file
-        )
-
-        // MultipartBody.Part is used to send also the actual file name
-
-        // MultipartBody.Part is used to send also the actual file name
-        val body = MultipartBody.Part.createFormData("picture", file.getName(), requestFile)
-
-        // add another part within the multipart request
-
-        // add another part within the multipart request
-        val descriptionString = "hello, this is description speaking"
-        val description = RequestBody.create(
-            MultipartBody.FORM, descriptionString
-        )
-
-
-    }
+//    private fun uploadFile() {
+//
+//        // https://github.com/iPaulPro/aFileChooser/blob/master/aFileChooser/src/com/ipaulpro/afilechooser/utils/FileUtils.java
+//        // use the FileUtils to get the actual file by uri
+//        val file: File = FileUtils.getFile(this, fileUri)
+//
+//        // create RequestBody instance from file
+//
+//        val requestFile: RequestBody = RequestBody.create(
+//            MediaType.parse(contentResolver.getType(fileUri)),
+//            file
+//        )
+//
+//        // MultipartBody.Part is used to send also the actual file name
+//
+//        val body = MultipartBody.Part.createFormData("picture", file.getName(), requestFile)
+//
+//        // add another part within the multipart request
+//
+//        val descriptionString = "hello, this is description speaking"
+//        val description = RequestBody.create(
+//            MultipartBody.FORM, descriptionString
+//        )
+//
+//
+//    }
 
     private fun fetchRepos() {
         CoroutineScope(Dispatchers.IO).launch {
