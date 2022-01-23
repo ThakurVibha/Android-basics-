@@ -20,6 +20,7 @@
         <entry key="..\:/Users/dell/AndroidStudioProjects/Crypton/app/src/main/res/drawable/onboarding_back.xml" value="0.21197916666666666" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Crypton/app/src/main/res/drawable/onboardingbtn_back.xml" value="0.21197916666666666" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Crypton/app/src/main/res/font/fonts.xml" value="0.23020833333333332" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Crypton/app/src/main/res/layout/activity_country.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Crypton/app/src/main/res/layout/activity_create_account.xml" value="0.2" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Crypton/app/src/main/res/layout/activity_dashboard_ativity.xml" value="0.10693970420932879" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Crypton/app/src/main/res/layout/activity_demo.xml" value="0.14114583333333333" />
@@ -27,6 +28,7 @@
         <entry key="..\:/Users/dell/AndroidStudioProjects/Crypton/app/src/main/res/layout/activity_github.xml" value="0.2" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Crypton/app/src/main/res/layout/activity_location.xml" value="0.2" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Crypton/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Crypton/app/src/main/res/layout/activity_meme.xml" value="0.2" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Crypton/app/src/main/res/layout/activity_navigation.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Crypton/app/src/main/res/layout/activity_new_arrival.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Crypton/app/src/main/res/layout/activity_on_boarding.xml" value="0.25" />
@@ -37,6 +39,7 @@
         <entry key="..\:/Users/dell/AndroidStudioProjects/Crypton/app/src/main/res/layout/cart_item_bg.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Crypton/app/src/main/res/layout/cart_toolbar.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Crypton/app/src/main/res/layout/collection_item.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Crypton/app/src/main/res/layout/country_item_layout.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Crypton/app/src/main/res/layout/fragment_a.xml" value="0.2" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Crypton/app/src/main/res/layout/fragment_b.xml" value="0.2" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Crypton/app/src/main/res/layout/fragment_c.xml" value="0.2" />
